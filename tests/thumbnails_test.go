@@ -2,19 +2,20 @@ package tests
 
 import (
 	"fmt"
-	"github.com/sunfmin/integrationtest"
-	"github.com/theplant/mgodb"
-	"github.com/theplant/tenpu"
-	"github.com/theplant/tenpu/thumbnails"
 	"io"
 	"io/ioutil"
-	"labix.org/v2/mgo/bson"
 	"mime/multipart"
 	"net/http"
 	"net/http/httptest"
 	"os"
 	"strings"
 	"testing"
+
+	"github.com/sunfmin/integrationtest"
+	"github.com/theplant/mgodb"
+	"github.com/theplant/tenpu"
+	"github.com/theplant/tenpu/thumbnails"
+	"gopkg.in/mgo.v2/bson"
 )
 
 var thumbnailsCollectionName = "thumbnails"
