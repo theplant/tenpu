@@ -2,17 +2,16 @@ package gridfs
 
 import (
 	"archive/zip"
-	// "bytes"
-	_ "code.google.com/p/go.image/bmp"
+
+	_ "golang.org/x/image/bmp"
 	"github.com/theplant/mgodb"
 	"github.com/theplant/tenpu"
-	mgo "gopkg.in/mgo.v2"
+	"gopkg.in/mgo.v2"
+  "gopkg.in/mgo.v2/bson"
 	"image"
 	_ "image/jpeg"
 	_ "image/png"
-	_ "image/png"
 	"io"
-	"labix.org/v2/mgo/bson"
 	"log"
 )
 
